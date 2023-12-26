@@ -1,0 +1,765 @@
+html, body{
+    margin: 0;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+
+
+
+    color:#555;
+
+    -webkit-font-smoothing: antialiased;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+
+.header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    /* margin:40px auto; */
+    padding: 20px;
+
+    transition: .3s;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+/*HEADER================================*/
+.header-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.header-startup{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-kink{
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+
+    opacity: 0.7;
+
+    margin-left: 32px;
+
+    transition: 0.3s linear;
+}
+.nav-kink:hover{
+    opacity: 1;
+}
+.nav-kink:first-child{
+    margin-left: 0;
+}
+
+
+
+/*INTRO==============================================*/
+
+.intro{
+    height: 770px;
+    width: 100%;
+    background-image: url("img/intro/Home\ Background.jpg");
+    background-size: cover;
+}
+
+.intro-inner{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+
+}
+
+.header-title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #fff;
+    text-transform: uppercase;
+
+    margin: 300px auto 14px;
+
+}
+.header-subtitle{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+
+    margin: 0 auto;
+}
+
+.header-link{
+    font-weight: 400;
+    font-size:16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    margin: 60px auto;
+    padding: 17px 33px;
+    border: 2px solid #fff;
+
+    transition: .4s linear;
+}
+.header-link:hover{
+    background-color: #fff;
+    color: #6e1e13;
+
+}
+
+
+
+/*SERVICES==============================================*/
+
+.big-block{
+    height: auto;
+    padding: 100px 0 ;
+
+    width: 100%;
+
+}
+.blocks-inner{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+.line{
+    font-size: 0px;
+    display: block;
+    background-color: #555;
+    height: 2px;
+    width: 50px;
+    margin: 30px auto;
+}
+.long{
+    width: 100%;
+    height: 1px;
+    background-color: #ddd;
+    margin: 40px auto;
+}
+.footer-line{
+    background-color: #fff;
+}
+.blocks-title{
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+    margin: 0;
+}
+.blocks-subtitle{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+
+    margin-bottom: 70px;    
+
+    
+
+
+}
+.services-blocks{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.blocks-item{
+    width: 33.3333%;
+    text-align:center;
+
+    padding: 0 15px;
+
+}
+.features-image{
+    margin: 0 auto;
+}
+.feature-title{
+    font-weight: 400;
+    color: #555;
+    text-transform: uppercase;
+
+
+
+    margin:  30px auto 25px;
+}
+.feature-text{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+
+    text-align: center;
+}
+
+.blog{
+    text-align: left;
+}
+/*ABOUT==============================================*/
+.about{
+    background-color: #f8f8f8;
+}
+
+.about-blocks{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-block{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    width: 50%;
+    padding: 0 15px;
+    margin: 0 auto 70px;
+
+    text-align: left;
+}
+.about-team{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.team-mate{
+    text-align: center;
+
+    width: 25%;
+
+    padding: 0 15px;
+}
+.team-image{
+
+    width: 100%;
+
+    background-color: #555;
+    opacity:1;
+
+    position: relative;
+}
+.team-image .team-photo{
+    display: block;
+    width: 100%;
+    transition: opacity .2s linear;
+
+
+}
+.team-image:hover .team-photo {
+    opacity:0.5;
+}
+.team-image:hover .social-link{
+    opacity: 1;
+}
+.team-name{
+    font-weight: 400;
+    color:#555;
+    text-transform: uppercase;
+    margin: 20px auto;
+
+}
+
+.team-job{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555;
+
+    margin: 0 auto;
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    bottom: 20%;
+}
+.social-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 3px;
+    height: 28px;
+    width: 28px;
+
+    opacity: 0;
+
+    transition: .2s linear;
+    text-align: center;
+}
+
+.social-link:hover{
+    background-color: #c0301c;
+}
+.social-icon{
+    height: 15px;
+}
+
+.link-icon{
+    padding: 6px 9px;
+}
+.works-navigation{
+    color: #555;
+    text-decoration: none;
+    margin: 0 13px;
+
+    transition: .1s linear;
+
+
+}
+.works-navigation:hover{
+    color: #c0301c;
+}
+.works-navigation:active{
+    color: #c0301c;
+
+}
+
+
+
+
+
+/*WORKS==============================================*/
+.works-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    
+
+}
+.works-item{
+    position: relative;
+
+    width: 33.333333%;
+    max-width: 360px;
+    height: 320px;
+
+    overflow:hidden;
+
+    border-left: 8px solid #fff;
+    border-right: 8px solid #fff;
+    border-top: 15px solid #fff;
+    border-bottom: 15px solid #fff;
+}
+.works-image{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d( -50%, -50%, 0);
+}
+.works-hover{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+
+    background-color: rgb(192, 48, 28, .7);
+
+    opacity: 0;
+
+    transition: 0.3s linear;
+}
+
+.works-hover:hover{
+    opacity: 1;
+}
+.works-title{
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+}
+.works-subtitle{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+
+    margin: 15px auto;
+
+
+}
+.works-link{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #c0301c;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 5px auto;
+    padding: 10px 30px;
+
+    background-color: #fff;
+
+    transition: .1s;
+}
+.offer{
+    font-size: 18px;
+}
+.works-link:hover{
+    background-color:transparent;
+    color: #fff;
+    border: 2px #fff solid ;
+}
+
+
+
+
+
+/*WORKS=============================================*/
+.offer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 100px 0 ;
+    background: url("img/offer/Paralax%20section.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    left: 0;
+    right: 0;
+
+}
+.offer-title{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.5;
+
+    margin-bottom: 50px;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+
+
+/*BLOG================================*/
+
+.blog-post{
+    display: flex;
+    justify-content: space-between;
+
+    transition: .2s linear;
+
+}
+
+.blog-post:hover .blog-title {
+    color: #c0301c;
+
+}
+.blog-post:hover .blog-subtitle span{
+    color: #c0301c;
+
+}
+.blog-post:hover .blog-link {
+    color: #c0301c;
+
+}
+
+
+
+.post-info{
+    display: flex;
+    flex-direction: column;
+
+    text-align: left;
+
+    margin-left: 40px;
+
+
+}
+.blog-first-line{
+    display: flex;
+}
+.blog-date{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 24px 26px;
+    padding-top: 14px;
+    border: 2px solid #555;
+
+    height: auto;
+
+}
+.date-number  {  
+    
+    text-align: center;
+
+    font-size: 24px;
+    font-weight: 700;
+    color: #777;
+    line-height: 1.5;
+
+    margin-bottom: -10px;
+
+    
+}
+.date-month{
+    font-size: 14px;
+    font-weight: 500;
+}
+.blog-title{
+    font-weight: 500;
+    color: #555;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.blog-subtitle{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #777;
+    text-transform: none;
+    font-style: italic;
+
+    padding-top: 2px;
+    
+
+    
+}
+.blog-subtitle span {
+    color: #555;
+}
+.blog-link{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 13px;
+    color: #555;
+    text-transform:uppercase;
+    text-decoration: none;
+    padding-bottom: 1px;
+
+    opacity: 0.8;
+
+    transition: opacity .2s  linear;
+    
+}
+.blog-link:hover{
+   /* border-bottom: 1px solid #c0301c ;*/
+   opacity: 1;
+}
+
+
+
+
+
+
+/*REVIEWS=============================================*/
+.emblems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 90px;
+}
+.WORDS-emblems{
+    height: auto;
+
+    margin: auto 25px;
+}
+
+.WORDS-text{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #555;
+    
+    font-style: italic;
+
+    
+}
+
+
+.author{
+    font-size: 20px;
+    font-style: normal;
+
+    margin: 50px auto;
+
+}
+
+
+
+/*contacs=============================================*/
+.contacts-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts{
+    text-align: left;
+
+    
+    
+}
+.contact-item{
+    display: flex;
+    position: relative;
+    
+
+    margin: 30px auto;
+}
+
+.contact-item:first-child{
+    margin-top: 0;  
+}
+.contact-image{
+    height: 20px;
+
+    position:relative;
+    top: 0;
+    left: 0;
+
+    margin-right: 10px;
+    
+}
+.contact-title{
+    font-weight: 500;
+    color: #555;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.contact-subtitle{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.7;
+}
+
+
+.client-data{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 188px;   
+    text-align: left;
+    
+    
+}
+.input{
+    width: 44%;
+    height: 40px;
+    
+    border: 2px solid #555;
+    margin: 0px 15px 20px;
+    padding: 10px ;
+
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+    text-transform: uppercase;
+}
+
+.multi{
+    height: 100px;
+}
+
+.big{
+    width: 100%;
+    height: 100px;
+}
+.contacts-link{
+    border: 2px solid #555;
+    border-radius: 10px;
+    padding: 2px 10px;
+    margin-top: 60px;    
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555;
+    text-transform: uppercase;
+    
+
+    transition: .3s linear;
+
+}
+.contacts-link:hover{
+    background-color: #555;
+    color: #fff;
+}
+
+/*FOOTER=============================================*/
+.footer{
+    background-color: #c0301c;
+}
+.footer-link{
+    text-decoration: none;
+}
+.footer-icon{
+    fill: #fff;
+
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin: 0 8px;
+
+    transition: .3s linear;
+   
+}
+.footer-icon:hover {
+    background-color: #fff;
+    fill: #c0301c;
+
+}
+  
+
+.footer-subtitle{
+    font-size: 12px;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    margin-bottom: 0;   
+}
+
+
+/*MEDIA==================*/
+@media (max-width:1023px) {
+}
+
