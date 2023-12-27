@@ -1,6 +1,6 @@
 html, body{
     margin: 0;
-
+    overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 
@@ -26,7 +26,7 @@ html, body{
     /* margin:40px auto; */
     padding: 20px;
 
-    transition: .3s;
+    transition: .6s;
 }
 
 .container{
@@ -70,7 +70,10 @@ html, body{
     margin-left: 0;
 }
 
-
+.all-navigation{
+    display: flex;
+    flex-direction: column;
+}
 
 /*INTRO==============================================*/
 
@@ -125,6 +128,35 @@ html, body{
     background-color: #fff;
     color: #6e1e13;
 
+}
+
+.burger{
+    width: 25px;
+    background-color: white;
+    height: 3px;
+    opacity: 1;
+}
+
+.burger::after {   
+    content:'';
+    position: relative;
+    display: inline-block;
+    top: -27px;
+    width: 25px;
+    background-color: white;
+    height: 3px;
+    opacity: 1;
+}
+
+.burger::before {
+    content:'';
+    position: relative;
+    display: inline-block;
+    bottom: 23px;
+    width: 25px;
+    background-color: white;
+    height: 3px;
+    opacity: 1;
 }
 
 
@@ -515,6 +547,7 @@ html, body{
     border: 2px solid #555;
 
     height: auto;
+    margin: 0 0 auto;
 
 }
 .date-number  {  
@@ -588,7 +621,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    flex-wrap: wrap;
     margin-bottom: 90px;
 }
 .WORDS-emblems{
@@ -760,6 +793,79 @@ html, body{
 
 
 /*MEDIA==================*/
-@media (max-width:1023px) {
+@media (max-width: 1023px) {
+.client-data {
+    margin-left: 90px;
 }
+
+.input {
+    width: 100%;
+}
+
+.blog-image {
+    height: 300px;
+}
+
+.blog-date {
+    padding: 10px 10px 14px;
+}
+
+.blog-title {
+    padding: 0 0 10px 10px;
+}
+}
+
+@media (max-width: 768px) {
+    .header-navigation{
+        /* background-color:#6e1e13; */
+        /* display: none; */
+        display: none;
+    }
+    
+    .header-navigation :first-child{
+        margin-left: 32px;
+    }
+    
+    .header-navigation.opened{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .burger.opened{
+        position: absolute;
+        right: 7px;
+        top: 16px;
+        transform: rotate(45deg);
+        transition: .4s;
+    }
+    
+    .burger.opened::after {
+        transform: rotate(90deg);
+        top: -14px;
+        right: 0;
+        transition: .4s;
+    }
+    
+    .burger.opened::before{
+        display: none;
+    }
+    
+    .blog-image {
+        height: 100px;
+    }
+    
+    .blog-date {
+        padding: 10px 10px 14px;
+    }
+    
+    .blog-title {
+        padding: 0 0 10px 10px;
+    }
+
+    .WORDS-emblems{
+        width: 50px;
+    }
+}
+
+
 

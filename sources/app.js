@@ -3,6 +3,28 @@ const $allLinks = document.querySelectorAll('a')
 const $inputs = document.querySelectorAll('input') 
 const $form = document.querySelector('.client-data')
 const $submitBtn = document.querySelector('.contacts-link')
+const $nav = document.querySelector('.header-navigation')
+const $burger = document.querySelector('.burger')
+
+
+function burger() {
+     let burgerIsOpened = false
+
+     $burger.addEventListener('click', () => {
+          console.log(!burgerIsOpened)
+          if(!burgerIsOpened) {
+               $nav.classList.add('opened')
+               $burger.classList.add('opened')
+          } else {
+               $nav.classList.remove('opened')
+               $burger.classList.remove('opened')
+          }
+
+          burgerIsOpened = !burgerIsOpened
+     })
+}
+
+burger()
 
 $allLinks.forEach(link => {
      link.addEventListener('click', (e) => {
@@ -23,9 +45,12 @@ document.addEventListener('scroll', () => {
 })
 
 for(const link of $navLinks) {
+     
      link.addEventListener('click', () => {
           const pageBlock = document.querySelector(`#${link.textContent.toLowerCase()}`)
           console.log(pageBlock.scrollIntoView())
+          $nav.classList.remove('opened')
+          $burger.classList.remove('opened')
      })
 }
 
