@@ -318,6 +318,7 @@ html, body{
     color: #555;
 
     margin: 0 auto;
+    margin-bottom: 4px;
 }
 
 .socials{
@@ -863,7 +864,69 @@ html, body{
     }
 
     .WORDS-emblems{
-        width: 50px;
+        width: 40%;
+        margin: 10px;
+    }
+
+    .header-title{
+        font-size: 24px;
+    }
+    
+    .header-subtitle{
+        font-size: 18px;
+    }
+
+    .blocks-item{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .about-block{
+        width: 100%;
+    }
+
+    .team-mate{
+        width: 100%;
+        margin-bottom: 40px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .works-item{
+        width: 100%;
+    }
+
+    .offer-title{
+        font-size: 25px;
+        padding: 10px;
+    }
+
+    .blog-post{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-image{
+        width: 90%;
+        height: 90%;
+        margin-bottom: 20px;
+    }
+
+    .contacts-block{
+        flex-wrap: wrap;
+        
+    }
+
+    .contacts{
+        width: 100%;
+    }
+
+    .client-data{
+        margin-left: 0;
+    }
+
+    .big-block{
+        padding-bottom: 40px;
     }
 }
 
