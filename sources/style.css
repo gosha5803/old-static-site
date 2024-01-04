@@ -833,6 +833,10 @@ html, body{
         flex-direction: column;
     }
 
+    .burger{
+        display: block;
+    }
+
     .burger.opened{
         position: absolute;
         right: 7px;
