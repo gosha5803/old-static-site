@@ -135,6 +135,7 @@ html, body{
     background-color: white;
     height: 3px;
     opacity: 1;
+    display: none;
 }
 
 .burger::after {   
